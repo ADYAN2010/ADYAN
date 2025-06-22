@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Husam Aldin Adyan - Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #0a0a0a;
+      color: #33ffcc;
+      font-family: 'Fira Code', monospace;
+    }
+    h1, h2, h5 {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .navbar {
+      background-color: #000;
+      border-bottom: 1px solid #1f1f1f;
+    }
+    .navbar-brand, .nav-link {
+      color: #33ffcc !important;
+    }
+    .nav-link:hover {
+      color: #00ffff !important;
+      text-shadow: 0 0 5px #00ffff;
+    }
+    header {
+      background: radial-gradient(circle at center, #000 0%, #0a0a0a 100%);
+      padding: 100px 0 50px;
+      text-align: center;
+      border-bottom: 1px solid #1f1f1f;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+    .section {
+      padding: 80px 0;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #00ffff;
+      border-bottom: 1px solid #1f1f1f;
+      padding-bottom: 10px;
+    }
+    .profile-pic {
+      border-radius: 12px;
+      max-width: 200px;
+      border: 2px solid #00ffff44;
+      box-shadow: 0 0 20px #00ffff33;
+    }
+    .list-group-item {
+      background-color: transparent;
+      color: #33ffcc;
+      border: none;
+    }
+    .project-card {
+      background-color: #101010;
+      border: 1px solid #222;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px #00ffff55;
+    }
+    .project-card img {
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-shadow: 0 0 6px #00ffff;
+    }
+    .btn-hack {
+      border: 1px solid #00ffff;
+      color: #00ffff;
+      background: transparent;
+      padding: 8px 20px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .btn-hack:hover {
+      background-color: #00ffff;
+      color: #000;
+      box-shadow: 0 0 10px #00ffff;
+    }
+    .typing-effect::after {
+      content: '|';
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    footer {
+      background-color: #000;
+      padding: 25px;
+      text-align: center;
+      color: #666;
+      border-top: 1px solid #1f1f1f;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-terminal"></i> Adyan@Kali</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1 class="typing-effect" id="typeLine">Husam Aldin Adyan</h1>
+    <p>Student | Developer | Logical Thinker</p>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section text-center container" data-aos="fade-up">
+    <h2 class="section-title">About Me</h2>
+    <img src="https://i.ibb.co/3ypQ9Zw0/Whats-App-Image-2025-04-02-at-16-40-26-f3242237.jpg" alt="Adyan" class="profile-pic mb-3">
+    <p>I’m <strong>Adyan</strong> — a Class 8 student who thinks like a dev and calculates like a machine. I blend logic with creativity to make amazing things on the web using <code>HTML</code>, <code>CSS</code>, and <code>JavaScript</code>.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container" data-aos="fade-right">
+    <h2 class="section-title">Skills <i class="fa-solid fa-code"></i></h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">💻 HTML, CSS, JavaScript</li>
+      <li class="list-group-item">📱 Responsive Web Design</li>
+      <li class="list-group-item">🧠 Logical Problem Solving</li>
+      <li class="list-group-item">🔧 Git & GitHub</li>
+      <li class="list-group-item">📊 Algebra, Statistics, Central Tendency</li>
+    </ul>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container" data-aos="fade-left">
+    <h2 class="section-title">Experience <i class="fa-solid fa-laptop-code"></i></h2>
+    <p>I’ve built websites, created math visualizers, and worked on multiple assignments for platforms like Codingal. I regularly work with dev tools and contribute code on GitHub.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container" data-aos="fade-up">
+    <h2 class="section-title">Projects <i class="fa-solid fa-folder-open"></i></h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ZJH1dLmkb8_aDuxQbZpQtoWY6gdBms0hEw&s" alt="Atithe Porayon">
+          <div class="card-body">
+            <h5 class="card-title">🍬 Atithe Porayon</h5>
+            <p>A traditional sweet showcase built using HTML, CSS & JS.</p>
+            <a href="https://github.com/ADYAN2010/Atithe-Porayon" target="_blank" class="btn btn-hack">GitHub →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="https://i.pinimg.com/236x/4f/d4/ee/4fd4ee58f60dd08935da9c9e2738bc2f.jpg" alt="Volgorithm">
+          <div class="card-body">
+            <h5 class="card-title">🧠 Volgorithm</h5>
+            <p>Algorithm visualizer to explain logic flow using animations.</p>
+            <a href="https://github.com/ADYAN2010/Volgorithm" target="_blank" class="btn btn-hack">GitHub →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card project-card">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?fm=jpg&q=60&w=3000" alt="Portfolio">
+          <div class="card-body">
+            <h5 class="card-title">🌐 Final Portfolio</h5>
+            <p>Responsive final submission for Codingal Module 7.</p>
+            <a href="https://github.com/ADYAN2010/Module-7-HW--Codingal--" target="_blank" class="btn btn-hack">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section text-center container" data-aos="zoom-in">
+    <h2 class="section-title">Contact <i class="fa-solid fa-envelope"></i></h2>
+    <p>📧 Email: <a href="mailto:husam10.haa@gmail.com">husam10.haa@gmail.com</a></p>
+    <p>💻 GitHub: <a href="https://github.com/ADYAN2010" target="_blank">ADYAN2010</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Husam Aldin Adyan • All rights reserved </p>
+  </footer>
+
+  <!-- Bootstrap JS + AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Optional Typing Effect
+    const title = "Husam Aldin Adyan";
+    let i = 0;
+    function type() {
+      if (i < title.length) {
+        document.getElementById("typeLine").innerHTML = title.substring(0, i + 1);
+        i++;
+        setTimeout(type, 100);
+      }
+    }
+    type();
+  </script>
+</body>
+</html>
